@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App | <%= City %>
+    </title>
+</head>
+
+<body>
+    <div id="box">
+        <div id="head">
+            <h1>Weather App</h1>
+            <form action="/" method="post">
+                <input type="text" name='city' id="inputCity" placeholder="Enter City Name">
+            </form>
+        </div>
+
+        <% if(search != false) {%>
+            <div id="currentWea">
+                <div id="div1">
+                    <div>
+                        <img src="<%= Image %>" alt="wea-img">
+                        <h4><%= Desc %></h4>
+                    </div>
+                    <div>
+                        <h1><%= temp %>&#8451;</h1>
+                        <h5>Humidity: <%= hum %></h5>
+                        <h5>wind: <%= wind %></h5>
+                    </div>
+                </div>
+                <h3><%= City %></h3>
+            </div>
+        <% } %>
+        
+        <% if(error == true) {%>
+            <h2 id="error"><%= errmsg %></h2>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#head > *{
+    margin: 10px 0;
+}
+#box{
+    background-color: rgb(62, 62, 85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px;
+}
+#box div{
+    padding: 15px;
+    border-radius: 50px;
+}
+#inputCity{
+    padding: 10px 0;
+    text-align: center;
+}
+#currentWea{
+    background-color: rgb(230, 224, 222);
+    color: black;
+}
+#div1{
+    display: flex;
+}
+@media(max-width:350px)
+{
+    #div1{
+        display: block;
+    }
+}
+#error{
+    background-color: rgb(230, 224, 222);
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
