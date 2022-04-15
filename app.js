@@ -43,7 +43,7 @@ app.post('/', (req,res)=>{
             temp: Math.round(wea.main.temp),
             hum : wea.main.humidity + "%",
             wind: wea.wind.speed+"m/s",
-            Image: 'http://openweathermap.org/img/wn/'+wea.weather[0].icon+'@2x.png';//'https://openweathermap.org/img/w/'+wea.weather[0].icon+".png",   
+            Image: 'http://openweathermap.org/img/wn/'+wea.weather[0].icon+'@2x.png',//'https://openweathermap.org/img/w/'+wea.weather[0].icon+".png",   
             Desc: wea.weather[0].description
         }
         res.render('index',values);
