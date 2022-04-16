@@ -32,7 +32,7 @@ body{
     text-align: center;
 }
 #currentWea{
-    background-color: rgb(80, 230, 230);
+    background-color: lightslategray;
     color: black;
 }
 #div1{
@@ -42,7 +42,7 @@ body{
     align-items:center;
 }
 #error{
-    background-color: rgb(230, 224, 222);
+    background-color: white;
     color: red;
     padding: 5px;
     border-radius: 5px;
