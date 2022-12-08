@@ -2,4 +2,4 @@
 
 a weather app in which user can get the current weather of any city by just entering the city name.
 
-Link: https://mrakesh-weather-app.herokuapp.com
+Link: https://weather-app-m.onrender.com
